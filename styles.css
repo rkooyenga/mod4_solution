@@ -4,6 +4,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body{
+  width:100%;max-width:100%;
+}
 table.console {
   text-align: center;
   color: green;
@@ -275,6 +278,7 @@ article p {
 header {
   height: 64px;
   border-bottom: 1px solid transparent;
+  position:inline-block;
   display: flex;
   align-items: center;
 }
@@ -316,9 +320,12 @@ figcaption {
 }
 
 .avatar {
+  aspect-ratio: 1 / 1 !important;
   height: 60px;
-  width: 60px !important;
+  width: 60px;
   border-radius: 50%;
+  min-height:32px;
+  min-width:32px;
 }
 .author-info {
   margin-left: 15px;
@@ -374,26 +381,36 @@ footer .author-info > a {
   font-weight: bold;
 }
 footer .author-meta {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (max-width: 899px) {
   h1 {
-    font-size: 32px;
+    font-size: 34px;
+    font-weight:900;
     margin: 31px 0 0;
   }
   h2 {
+    font-size: 30px;
+    font-weight:700;
+    margin: 28px 0 0;
+  }
+  h3 {
     font-size: 28px;
+    font-weight:700;
     margin: 28px 0 0;
   }
   article blockquote,
   article ul,
   article ol,
   article p {
-    font-size: 18px;
+    font-size: 22px;
   }
   header {
     height: 56px;
+  }
+  table>tbody>tr>th{
+    font-size:20px;
   }
 }
 
