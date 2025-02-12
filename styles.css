@@ -384,7 +384,7 @@ footer .author-meta {
   font-size: 16px;
 }
 
-@media (max-width: 899px) {
+@media (min-width:320 to max-width: 899px) {
   h1 {
     font-size: 34px;
     font-weight:900;
